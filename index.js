@@ -1,10 +1,3 @@
-# astar-js
-
-Astar algorithm implemented by JavaScript
-
-示例：
-
-```javascript
 let AStar = require("./astar")
 
 let map = [
@@ -30,19 +23,3 @@ for (let p of path) {
 for (let line of map) {
     console.log(line.toString().replace(/,/g, ' '))
 }
-```
-
-运行结果：
-
-```
-0 . . 0 0 1 0 0 0 0
-. 1 1 . 0 1 0 0 0 0
-. 1 1 . 0 1 0 0 0 0
-. 1 0 . 0 1 0 . . 0
-. 1 . 1 1 1 . 0 1 .
-. 1 . 1 0 . 0 0 1 .
-. 1 . 1 . 1 1 1 1 .
-. 1 . 1 . 1 0 0 0 .
-. 1 . 1 . 1 0 0 0 .
-0 1 0 . 0 1 0 0 0 .
-```
